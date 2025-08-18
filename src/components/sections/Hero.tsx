@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, Play, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroImage from '@/assets/hero-bg.jpg';
 
@@ -23,35 +23,84 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="animate-fade-in">
-          <h1 className="font-heading text-5xl md:text-7xl font-bold mb-6">
-            Automate Your Ads.{' '}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Scale Like a Legend.
-            </span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Power your advertising with AI-driven automation. Create, optimize, and scale campaigns across platforms while you focus on what matters most.
-          </p>
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <div className="animate-fade-in">
+            <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6">
+              <Sparkles className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-primary">Trusted by 10,000+ Growth Teams</span>
+            </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Link to="/signup">
-              <Button variant="hero" size="xl" className="group">
-                Start Free Trial
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
-            <Button variant="glass" size="xl" className="group">
-              <Play className="w-5 h-5 mr-2" />
-              Watch Demo
-            </Button>
+            <h1 className="font-heading text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              Automate Your Ads.
+              <br />
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                Scale Like a Legend.
+              </span>
+            </h1>
+
+            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
+              AdLegend connects your channels, generates creatives, and optimizes budgets in real time—so you can focus on strategy while AI handles the execution.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+              <Link to="/signup">
+                <Button variant="hero" size="xl" className="group">
+                  Start Free Trial
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <Link to="/launch-campaign">
+                <Button variant="outline" size="xl" className="group">
+                  <Play className="w-5 h-5" />
+                  Launch Campaign
+                </Button>
+              </Link>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground mb-8">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-success rounded-full"></div>
+                No credit card required
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-success rounded-full"></div>
+                14-day free trial
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-success rounded-full"></div>
+                Setup in under 5 minutes
+              </div>
+            </div>
           </div>
+        </div>
 
-          <p className="text-sm text-muted-foreground">
-            No credit card required • 14-day free trial • Cancel anytime
-          </p>
+        {/* Dashboard Preview */}
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl rounded-3xl"></div>
+          <div className="relative bg-card/50 backdrop-blur-lg border border-border rounded-2xl p-6 shadow-2xl">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              <div className="bg-background/80 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-primary mb-1">$124K</div>
+                <div className="text-sm text-muted-foreground">Ad Spend</div>
+              </div>
+              <div className="bg-background/80 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-success mb-1">2.4x</div>
+                <div className="text-sm text-muted-foreground">ROAS</div>
+              </div>
+              <div className="bg-background/80 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-warning mb-1">$14.25</div>
+                <div className="text-sm text-muted-foreground">CPA</div>
+              </div>
+              <div className="bg-background/80 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-accent mb-1">870</div>
+                <div className="text-sm text-muted-foreground">Conversions</div>
+              </div>
+            </div>
+            <div className="h-48 bg-background/60 rounded-lg flex items-center justify-center">
+              <div className="text-muted-foreground">Live Dashboard Preview</div>
+            </div>
+          </div>
         </div>
       </div>
 
