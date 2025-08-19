@@ -28,19 +28,19 @@ export const Hero = () => {
           <div className="animate-fade-in">
             <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Trusted by 10,000+ Growth Teams</span>
+              <span className="text-sm font-medium text-primary">Trusted by 1,000+ CA Firms & SMBs</span>
             </div>
 
             <h1 className="font-heading text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Automate Your Ads.
+              AI-Powered CRM &
               <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Scale Like a Legend.
+                Marketing Automation
               </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
-              AdLegend connects your channels, generates creatives, and optimizes budgets in real time—so you can focus on strategy while AI handles the execution.
+              ProDox helps CA firms and SMBs capture leads, automate conversations, and scale client relationships with secure, compliant AI technology.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -50,10 +50,10 @@ export const Hero = () => {
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Link to="/launch-campaign">
+              <Link to="/dashboard">
                 <Button variant="outline" size="xl" className="group">
                   <Play className="w-5 h-5" />
-                  Launch Campaign
+                  View Demo
                 </Button>
               </Link>
             </div>

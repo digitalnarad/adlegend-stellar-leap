@@ -18,10 +18,10 @@ export const Navbar = () => {
 
   const navItems = [
     { label: 'Features', href: '#features' },
-    { label: 'How it Works', href: '#how-it-works' },
+    { label: 'Integrations', href: '/integrations' },
     { label: 'Pricing', href: '#pricing' },
-    { label: 'Launch Campaign', href: '/launch-campaign' },
-    { label: 'Dashboard', href: '/dashboard' },
+    { label: 'Case Studies', href: '/case-studies' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -38,7 +38,7 @@ export const Navbar = () => {
               <Zap className="w-5 h-5 text-white" />
             </div>
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              AdLegend
+              ProDox
             </span>
           </Link>
 

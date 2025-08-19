@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* AdLegend Design System - Futuristic AI Tech Theme
+/* ProDox Design System - AI-powered CRM & Marketing Automation
+Purple gradient theme with dark-first approach for CA firms and SMBs
 All colors MUST be HSL. Gradients and animations defined here.
 */
 
@@ -22,13 +23,17 @@ All colors MUST be HSL. Gradients and animations defined here.
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    /* Brand Colors - Blue to Violet Gradient System */
-    --primary: 217 91% 60%; /* Blue #3B82F6 */
+    /* Brand Colors - Purple Gradient System for ProDox */
+    --primary: 270 95% 60%; /* Purple #8B2FF6 */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 224 76% 48%;
+    --primary-glow: 280 85% 65%;
     
-    --secondary: 262 83% 58%; /* Violet #8B5CF6 */
+    --secondary: 260 100% 70%; /* Bright Purple #A855F7 */
     --secondary-foreground: 0 0% 100%;
+    
+    /* Neon Highlights */
+    --neon: 285 100% 65%; /* Neon Purple */
+    --neon-foreground: 0 0% 100%;
     
     /* Neutral System */
     --muted: 220 13% 97%;
@@ -50,11 +55,12 @@ All colors MUST be HSL. Gradients and animations defined here.
     --radius: 12px;
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(262 83% 58%));
-    --gradient-primary-hover: linear-gradient(135deg, hsl(217 91% 65%), hsl(262 83% 63%));
-    --gradient-subtle: linear-gradient(135deg, hsl(217 91% 60% / 0.1), hsl(262 83% 58% / 0.1));
-    --gradient-glow: linear-gradient(135deg, hsl(217 91% 60% / 0.2), hsl(262 83% 58% / 0.2));
+    /* Gradients - Purple Theme */
+    --gradient-primary: linear-gradient(135deg, hsl(270 95% 60%), hsl(260 100% 70%));
+    --gradient-primary-hover: linear-gradient(135deg, hsl(270 95% 65%), hsl(260 100% 75%));
+    --gradient-subtle: linear-gradient(135deg, hsl(270 95% 60% / 0.1), hsl(260 100% 70% / 0.1));
+    --gradient-glow: linear-gradient(135deg, hsl(270 95% 60% / 0.2), hsl(260 100% 70% / 0.2));
+    --gradient-neon: linear-gradient(135deg, hsl(285 100% 65%), hsl(270 95% 60%));
 
     /* Shadows */
     --shadow-soft: 0 4px 20px hsl(217 91% 60% / 0.1);
@@ -96,13 +102,17 @@ All colors MUST be HSL. Gradients and animations defined here.
     --popover: 222 47% 6%;
     --popover-foreground: 0 0% 98%;
 
-    /* Brand Colors - Adjusted for dark mode */
-    --primary: 217 91% 65%;
+    /* Brand Colors - Dark mode optimized */
+    --primary: 270 95% 65%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 224 76% 53%;
+    --primary-glow: 280 85% 70%;
     
-    --secondary: 262 83% 63%;
+    --secondary: 260 100% 75%;
     --secondary-foreground: 0 0% 100%;
+    
+    /* Neon Highlights - Dark mode */
+    --neon: 285 100% 70%;
+    --neon-foreground: 0 0% 100%;
     
     /* Neutral System */
     --muted: 222 47% 8%;
@@ -120,11 +130,12 @@ All colors MUST be HSL. Gradients and animations defined here.
     --input: 222 47% 15%;
     --ring: 217 91% 60%;
 
-    /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 65%), hsl(262 83% 63%));
-    --gradient-primary-hover: linear-gradient(135deg, hsl(217 91% 70%), hsl(262 83% 68%));
-    --gradient-subtle: linear-gradient(135deg, hsl(217 91% 65% / 0.1), hsl(262 83% 63% / 0.1));
-    --gradient-glow: linear-gradient(135deg, hsl(217 91% 65% / 0.2), hsl(262 83% 63% / 0.2));
+    /* Dark mode gradients - Purple theme */
+    --gradient-primary: linear-gradient(135deg, hsl(270 95% 65%), hsl(260 100% 75%));
+    --gradient-primary-hover: linear-gradient(135deg, hsl(270 95% 70%), hsl(260 100% 80%));
+    --gradient-subtle: linear-gradient(135deg, hsl(270 95% 65% / 0.1), hsl(260 100% 75% / 0.1));
+    --gradient-glow: linear-gradient(135deg, hsl(270 95% 65% / 0.2), hsl(260 100% 75% / 0.2));
+    --gradient-neon: linear-gradient(135deg, hsl(285 100% 70%), hsl(270 95% 65%));
 
     /* Dark mode shadows */
     --shadow-soft: 0 4px 20px hsl(217 91% 60% / 0.3);
